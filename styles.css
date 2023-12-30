@@ -1,0 +1,86 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+h1, p {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+}
+
+p {
+    font-size: x-large;
+}
+
+.moveIcon {
+    max-height: 5vh;
+    width: auto;
+}
+
+.result {
+    font-weight: bold;
+}
+
+.moveButton {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    font-size: x-large;
+    /* background: lightblue; */
+    background-color: transparent;
+    border: 3px solid #83B5D1;
+    border-radius: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.reset {
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+    background: #83B5D1;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.moveButton:hover {
+    background: #83B5D1;
+    /* background: white; */
+    box-shadow: 0 0 40px 15px #83B5D1;
+    border: none;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.reset:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+    /* box-shadow: 0 0 30px 5px #F78E69; */
+    box-shadow: -5px 5px 0  #ef233c;
+    transition: 0.2s ease;
+}
+
+button:active {
+    background-color: white;
+    transform: scale(0.98);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
