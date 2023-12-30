@@ -84,17 +84,13 @@ function playGame(playerMove) {
         score.tie++;
     }
 
-    if(compMove === 'rock') {compMove = '✊🏻'};
-    if(compMove === 'paper') {compMove = '🖐🏻'};
-    if(compMove === 'scissor') {compMove = '✌🏻'};
-    if(playerMove === 'scissor') {playerMove = '✌🏻'};
-    if(playerMove === 'rock') {playerMove = '✊🏻'};
-    if(playerMove === 'paper') {playerMove = '🖐🏻'};
-
 
     localStorage.setItem('score', JSON.stringify(score));
     document.querySelector('.result').innerHTML = result;
-    document.querySelector('.move').innerHTML = `You ${playerMove}  ${compMove} Computer`;
+    document.querySelector('.move').innerHTML = `You
+    <img src="assets/${playerMove}.png" alt="rock" class="moveIcon">
+    <img src="assets/${compMove}.png" alt="rock" class="moveIcon">
+    Computer`;
     updateScore();
 }
 
