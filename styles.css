@@ -3,8 +3,14 @@ html {
     padding: 0px;
 }
 
+
+h1 {
+    font-size: 3em;
+}
+
 body {
-    background-color: black;
+    background-color: #5828a5;
+    background-image: url(assets/asfalt-light.png);
 }
 
 h1, p {
@@ -16,6 +22,13 @@ h1, p {
 
 p {
     font-size: x-large;
+}
+
+.container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .moveIcon {
@@ -45,7 +58,7 @@ p {
     cursor: pointer;
 }
 
-.reset {
+.reset, .auto {
     border: none;
     border-radius: 3px;
     padding: 10px;
@@ -66,7 +79,7 @@ p {
     transition: 0.3s ease;
 }
 
-.reset:hover {
+.reset:hover, .auto:hover {
     background-color: lightblue;
     transform: scale(1.1);
     /* box-shadow: 0 0 30px 5px #F78E69; */
